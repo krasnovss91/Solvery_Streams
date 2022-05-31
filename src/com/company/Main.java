@@ -9,12 +9,12 @@ public class Main {
 
         int [] numbers = {1249, 1259, 1283, 3001, 3011};
         PrimeNumbersGroup primeNumbersGroup = new PrimeNumbersGroup();
-        primeNumbersGroup.setNumbers(numbers);//сюда массив сохраняется
+        primeNumbersGroup.setNumbers(numbers);
 
         List<PrimeNumbersGroup> primes = new ArrayList<>();
-        primes.add(primeNumbersGroup);// а здесь null
+        primes.add(primeNumbersGroup);
 
-        primes.stream().forEach(s -> System.out.println(s));
+        primes.stream().forEach(s -> System.out.println(s.numbers));//numbers-массив. Сначала достать его содержимое
 	// write your code here
         /*
         Необходимо из списка primes найти число, для которого сумма цифр будет минимальна, например, для

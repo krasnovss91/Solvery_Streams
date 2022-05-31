@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -8,10 +9,10 @@ public class Main {
 
         int [] numbers = {1249, 1259, 1283, 3001, 3011};
         PrimeNumbersGroup primeNumbersGroup = new PrimeNumbersGroup();
-        primeNumbersGroup.setNumbers(numbers);
+        primeNumbersGroup.setNumbers(numbers);//сюда массив сохраняется
 
-        List<PrimeNumbersGroup> primes = null;
-        primes.add(primeNumbersGroup);
+        List<PrimeNumbersGroup> primes = new ArrayList<>();
+        primes.add(primeNumbersGroup);// а здесь null
 
         primes.stream().forEach(s -> System.out.println(s));
 	// write your code here

@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -14,7 +15,10 @@ public class Main {
         List<PrimeNumbersGroup> primes = new ArrayList<>();
         primes.add(primeNumbersGroup);
 
-        primes.stream().forEach(s -> System.out.println(s.numbers));//numbers-массив. Сначала достать его содержимое
+        primes.stream().forEach(s -> System.out.println(Arrays.stream(s.numbers).max()));
+        primes.stream().forEach(s -> System.out.println(Arrays.stream(Arrays.stream(s.numbers).toArray()).sum()));
+        //пересчитать сумму элементов каждого элемента и вывести наименьшую
+        //представить каждый элемент как массив (например, toArray)
 	// write your code here
         /*
         Необходимо из списка primes найти число, для которого сумма цифр будет минимальна, например, для

@@ -17,6 +17,7 @@ public class Main {
 
         primes.stream().forEach(s -> System.out.println(Arrays.stream(s.numbers).max()));
         primes.stream().forEach(s -> System.out.println(Arrays.stream(Arrays.stream(s.numbers).toArray()).sum()));
+        primes.stream().forEach(s -> System.out.println(Arrays.stream(s.numbers)));
         //пересчитать сумму элементов каждого элемента и вывести наименьшую
         //представить каждый элемент как массив (например, toArray)
 	// write your code here

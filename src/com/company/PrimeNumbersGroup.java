@@ -9,5 +9,15 @@ public class PrimeNumbersGroup {
         this.numbers = numbers;
     }
 
-    public int [] numbers;
+    private int [] numbers;
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    private int number;
 }
